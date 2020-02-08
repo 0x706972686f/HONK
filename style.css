@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+html, body{
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background: #4165d1;
+  width: 100%;
+  height: 100vh;
+  color: #fff;
+  font-family: 'Roboto';
+}
+body{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  cursor: pointer;
+}
+h1{
+  font-weight: normal;
+  font-size: 5vmin;
+}
+svg{
+  width: 40vmin;
+}
+#honks{
+  opacity: 0;
+}
+#honks.honk{
+  opacity: 1;
+}
+#bottombeak > path, #topbeak > path{
+  transform: rotate(0deg);
+}
+#bottombeak.honk > path{
+  transform: rotate(20deg);
+  transform-origin: 308px 139px;
+  fill: #d37231;
+}
+#topbeak.honk > path{
+  transform: rotate(-20deg);
+  transform-origin: 299px 120px
+}
